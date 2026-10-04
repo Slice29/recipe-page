@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Frontend Mentor | Challenge name</title>
+    <title>Frontend Mentor | Simple Omelette Recipe</title>
     <link
       rel="icon"
       type="image/png"
@@ -20,16 +20,16 @@
   </head>
   <body class="bg-stone-100">
     <main
-      class="mx-auto mt-20 w-auto rounded-xl bg-white p-8 font-sans md:w-3xl"
+      class="mx-auto mt-20 w-auto rounded-xl bg-white p-8 font-sans md:w-2xl"
     >
       <img
         class="rounded-xl"
         src="./assets/images/image-omelette.jpeg"
-        alt="Omlette"
+        alt="Omelette on a plate"
       />
 
       <h1 class="mt-8 font-serif text-4xl text-stone-900">
-        Simple Omlette Recipe
+        Simple Omelette Recipe
       </h1>
       <p class="mt-4 font-thin text-stone-600">
         An easy and quick dish, perfect for any meal. This classic omelette
@@ -106,12 +106,19 @@
         The table below shows nutritional values per serving without the
         additional fillings.
       </p>
+
       <table class="mt-4 w-full table-fixed border-separate border-spacing-y-3">
+        <caption class="sr-only">
+          Nutrition facts per serving
+        </caption>
         <tbody>
           <tr>
-            <td class="w-1/2 border-b border-stone-150 pl-8 text-stone-600">
+            <th
+              scope="row"
+              class="w-1/2 border-b border-stone-150 pl-8 text-left text-stone-600"
+            >
               Calories
-            </td>
+            </th>
             <td
               class="w-1/2 border-b border-stone-150 font-bold text-brown-800"
             >
@@ -119,9 +126,11 @@
             </td>
           </tr>
           <tr>
-            <td class="w-1/2 border-b border-stone-150 pl-8 text-stone-600">
+            <th
+              class="w-1/2 border-b border-stone-150 pl-8 text-left text-stone-600"
+            >
               Carbs
-            </td>
+            </th>
             <td
               class="w-1/2 border-b border-stone-150 font-bold text-brown-800"
             >
@@ -129,9 +138,11 @@
             </td>
           </tr>
           <tr>
-            <td class="w-1/2 border-b border-stone-150 pl-8 text-stone-600">
+            <th
+              class="w-1/2 border-b border-stone-150 pl-8 text-left text-stone-600"
+            >
               Protein
-            </td>
+            </th>
             <td
               class="w-1/2 border-b border-stone-150 font-bold text-brown-800"
             >
@@ -139,7 +150,7 @@
             </td>
           </tr>
           <tr>
-            <td class="w-1/2 pl-8 text-stone-600">Fat</td>
+            <th class="w-1/2 pl-8 text-left text-stone-600">Fat</th>
             <td class="w-1/2 font-bold text-brown-800">22g</td>
           </tr>
         </tbody>
